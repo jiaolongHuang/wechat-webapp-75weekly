@@ -12,4 +12,6 @@
 * 没有提供直接显示html代码变量的方法，估计和react一样为了防止xss
 
 # 示例图
-
+<img src="http://p7.qhimg.com/d/inn/bfd120b6/new.png" width="300" height="450" />
+<img src="http://p7.qhimg.com/d/inn/bfd120b6/history.png" width="300" height="450"/>
+<img src="http://p4.qhimg.com/d/inn/bfd120b6/search.png" width="300" height="450"/>
