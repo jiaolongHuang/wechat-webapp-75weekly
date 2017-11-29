@@ -3,7 +3,7 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
+    motto: 'Good Good Study, Day Day Up',
     userInfo: {}
   },
   onLoad: function () {

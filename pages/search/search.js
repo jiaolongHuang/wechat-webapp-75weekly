@@ -26,8 +26,9 @@ Page({
   },
   searchClickEvent: function(e) {
 		var _this = this
+    console.log(_this.data.searchKey)
 		if( !_this.data.searchKey ) return;
-		_this.fetchListData()
+		_this.fetchListData(_this.data.isInit)
 
   },
   lower: function(e){
@@ -47,22 +48,27 @@ Page({
       url: `../detail/detail?url=${url}`
     })
   },
-  fetchListData: function(){
+  fetchListData: function(isInit){
     var _this = this
     _this.setData({
       laddingHidden: false,
       isInit: false
     })
     
-    if (_this.data.curPage === 1) {
+    if(isInit){
       _this.setData({
-        listData: []
+        listData: [],
+        curPage: 1
       });
     }
+    // if (_this.data.curPage === 1) {
+    //   _this.setData({
+    //     listData: []
+    //   });
+    // }
     fetchGet(
       API.getSearchRes(_this.data.searchKey, _this.data.curPage),
       (data) => {
-      	//console.log(data)
         var newData = _this.data.listData.concat(data.data)
 
         _this.setData({

@@ -16,3 +16,16 @@
 .issue-time{
   float: right;
 }
+
+/*
+不支持
+.issue.test
+.issue:first-child
+.issur:last-child
+还支持
+> + ~ :after :before [data-test='11']
+ */
+
+/*.issue ~ .issue-time{
+	background: red;
+}*/

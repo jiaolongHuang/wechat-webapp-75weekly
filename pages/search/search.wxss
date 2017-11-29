@@ -10,7 +10,7 @@
 }
 .search-wrap input {
   margin-top: 5px;
-  padding: 5px 10rpx;
+  padding: 5px 65rpx 5px 20rpx;
   height: 20px;
   border-radius: 5rpx;
   background: #FFF;

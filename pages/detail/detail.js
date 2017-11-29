@@ -11,14 +11,19 @@ Page({
   onLoad: function (options) {
     var _this = this
     var url = options.url
-    
+    console.log(url)
 		// 获取最新一期数据
 		fetchGet(
 		  API.getTrans(url),
 		  (data) => {
-		  	var cont = UTIL.unicode2HZ( data.data.content )
+        console.log(data)
+		  	var cont = '解析页面为空', title = ''
+        if(data.data){
+          cont =UTIL.unicode2HZ( data.data.content ) 
+          title = data.data.title
+        }
 		    _this.setData({
-		    	title: data.data.title,
+		    	title: title,
 		      wxParseData: WxParse('html', cont)
 		    })
 		  },

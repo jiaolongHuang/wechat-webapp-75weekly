@@ -22,23 +22,23 @@
     "backgroundColor": "#ffffff",
     "list": [{
       "pagePath": "pages/index/index",
-      "iconPath": "image/wechat.png",
-      "selectedIconPath": "image/wechatHL.png",
+      "iconPath": "image/new0.png",
+      "selectedIconPath": "image/new.png",
       "text": "最新"
     }, {
       "pagePath": "pages/history/history",
-      "iconPath": "image/wechat.png",
-      "selectedIconPath": "image/wechatHL.png",
+      "iconPath": "image/history0.png",
+      "selectedIconPath": "image/history.png",
       "text": "往期"
     }, {
       "pagePath": "pages/search/search",
-      "iconPath": "image/wechat.png",
-      "selectedIconPath": "image/wechatHL.png",
+      "iconPath": "image/search0.png",
+      "selectedIconPath": "image/search.png",
       "text": "搜索"
     }, {
       "pagePath": "pages/user/user",
-      "iconPath": "image/wechat.png",
-      "selectedIconPath": "image/wechatHL.png",
+      "iconPath": "image/user0.png",
+      "selectedIconPath": "image/user.png",
       "text": "我的"
     }]
   }

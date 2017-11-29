@@ -15,10 +15,12 @@ Page({
   //事件处理函数
   bindToDetailPage: function( e ) {
     var url = encodeURIComponent(e.currentTarget.dataset.url)
-
+    console.log(`../detail/detail?url=${url}`)
+    url = 'https%3A%2F%2Fimququ.com%2Fpost%2Fwhy-can-not-turn-on-ocsp-stapling.html'
     // navigateTo跳转页面内的某个页面
     wx.navigateTo({
       url: `../detail/detail?url=${url}`
+      //url: `../detail/detail?url=q-1`
     })
   },
   onLoad: function () {

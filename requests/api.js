@@ -1,4 +1,4 @@
-const API_BASE = 'http://weeklyapi.75team.com'
+const API_BASE = 'https://weeklyapi.75team.com'
 
 export const getLatest = () => {
 	return `${API_BASE}/issue/latest`
@@ -13,7 +13,9 @@ export const getIssueDetail = (iid)  => {
 }
 
 export const getTrans = (url) => {
-	return `${API_BASE}/transcode/${url}`
+	let u = encodeURIComponent(url)
+	console.log(`${API_BASE}/transcode/${u}`)
+	return `${API_BASE}/transcode/${u}`
 }
 
 export const getSearchRes = (keyword, page) => {
